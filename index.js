@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs")
-// const html = require("./generateHtml")
-// const path = require("path")
+const html = require("./generatehtml")
+const path = require("path")
 inquirer
 const questions = [
     {
@@ -24,12 +24,29 @@ const questions = [
     
 ];
 // console.log(questions);
+// function writeToFile(){
+
+    function writeToFile(fileName, data) {
+        return fs.writeFileSync(path.join (process.cwd (),fileName),data
+        )
+    }
+
+    // fs.writeFile('index.html', 'answers', function (err) {
+//     if (err) throw err;
+//     console.log('Saved!');
+//   });
+// }
 
 function init() {
     inquirer.prompt(questions)
     .then (answers => {
-        writeToFile("index.html",markdown(answers))
+        writeToFile("index.html",html(answers))
     })
 }
+
+
+
+
+
 
 init();
