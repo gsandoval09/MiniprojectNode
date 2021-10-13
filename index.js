@@ -7,7 +7,7 @@ const questions = [
     {
         type: "input",
         message: "What is your name?",
-        name: "Username",
+        name: "Name",
     },
 
     {
@@ -21,6 +21,21 @@ const questions = [
         message: "What is your favorite hobby?",
         name: "Hobby",
     },
+    {
+        type: "input",
+        message: "What is your favorite food?",
+        name: "Food",
+    },
+    {
+        type: "input",
+        message: "Enter your GitHub Username",
+        name: "Username",
+    },
+    {
+        type: "input",
+        message: "Enter your LinkedIn URL.",
+        name: "LinkedIn",
+    }
     
 ];
 // console.log(questions);

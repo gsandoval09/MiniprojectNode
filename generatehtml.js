@@ -2,7 +2,7 @@ function generatehtml(data) {
     return `# ${data.project} 
     # username
     ${
-      data.Username 
+      data.Name 
     }
     
     # location
@@ -15,8 +15,20 @@ function generatehtml(data) {
         data.Hobby
     }
   
-  
-  
+    #food
+    ${
+      data.Food
+    }
+
+    #username
+    ${
+      data.Username
+    }
+
+    #LinkedIn
+    ${
+      data.LinkedIn
+    }
   `;
   }
   
